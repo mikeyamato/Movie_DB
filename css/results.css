@@ -1,0 +1,26 @@
+img {
+	width: 15vw;
+}
+
+* {
+	color: red;
+}
+
+.column {
+	float: left;
+}
+
+#elements::after {
+	/* use `content` with `::after` */
+	content: "";
+	clear: both; 
+	display: table; 
+}
+
+#plot, #rating, #actors, #releasedYear, #runtime, #genre, #return-field  {
+	padding-top: 10px;
+}
+
+#review0, #review1, #review2, #plot, #rating, #actors, #releasedYear, #runtime, #genre, #return-field  {
+	padding-left: 15px;
+}
