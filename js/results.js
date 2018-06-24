@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
-	var movieObject = JSON.parse(sessionStorage.res);
-	console.log(sessionStorage.res);
+	// var movieObject = JSON.parse(sessionStorage.res);
+	var movieObject = sessionStorage.getItem('omdbRes');
+	// console.log(sessionStorage.res);
 	console.log(movieObject);
 
 	// poster
