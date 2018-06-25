@@ -1,9 +1,8 @@
 $(document).ready(function() {
 
 	// var movieObject = JSON.parse(sessionStorage.res);
-	var movieObject = sessionStorage.getItem('omdbRes');
+	var movieObject = JSON.parse(sessionStorage.getItem('omdbRes'));
 	// console.log(sessionStorage.res);
-	console.log(movieObject);
 
 	// poster
 	$('#poster').append("<img src='"+movieObject.Poster+"' />")
@@ -33,5 +32,7 @@ $(document).ready(function() {
 
 	// genre
 	document.getElementById('genre').innerHTML = 'Genre: ' + movieObject.Genre;
+
+	sessionStorage.clear();
 
 });
